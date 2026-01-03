@@ -1,0 +1,42 @@
+baseURL = 'https://marteloseco.github.io/'
+languageCode = 'en-us'
+title = 'Sebastião Martelo Seco'
+theme = 'PaperMod'
+
+[params]
+  author = 'Sebastião Martelo Seco'
+  description = 'Personal blog about software development'
+
+  [params.profileMode]
+    enabled = true
+    title = "Sebastião Martelo Seco"
+    subtitle = "Forging ideas into products, one project at a time"
+    imageUrl = "/images/avatar.png"
+    imageWidth = 150
+    imageHeight = 150
+    imageTitle = "Sebastião Martelo Seco"
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "/posts"
+    [[params.profileMode.buttons]]
+      name = "About"
+      url = "/about"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/marteloseco"
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
